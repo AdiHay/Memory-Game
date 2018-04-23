@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adi_h.ex1_adihay.MainActivity3_game">
+
+    <EditText
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="Timer"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/timerText"
+        tools:layout_editor_absoluteY="33dp" />
+
+
+    <TextView
+        android:id="@+id/hardText"
+        android:layout_width="112dp"
+        android:layout_height="27dp"
+        android:text="Hard"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timerText" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="dog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.2"
+        app:layout_constraintTop_toBottomOf="@id/hardText"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="monkey"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.1"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.3"
+        app:layout_constraintTop_toBottomOf="@id/hardText"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="koala"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.2"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.4"
+        app:layout_constraintTop_toBottomOf="@id/hardText"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="hedgehog"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.3"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.5"
+        app:layout_constraintTop_toBottomOf="@id/hardText"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="snake"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hardText"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="bird"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.1"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="tiger"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.6"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.8"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.2"
+        app:srcCompat="@drawable/star" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3.8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="cat"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.7"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.9"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.3"
+        app:srcCompat="@drawable/star" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3.9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="tiger"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.8"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.10"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.4"
+        app:srcCompat="@drawable/star" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3.10"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="bird"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.5"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.11"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="snake"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.6"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.12"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="fish"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.11"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.13"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.7"
+        app:srcCompat="@drawable/star" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3.13"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.12"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.14"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.8"
+        app:srcCompat="@drawable/lion" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.14"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="hedgehog"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.13"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.15"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.9"
+        app:srcCompat="@drawable/star" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3.15"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="whale"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.10"
+        app:srcCompat="@drawable/star" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3.16"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="cat"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.17"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.11"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.17"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="whale"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.16"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.18"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.12"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.18"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="dog"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.17"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.19"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.13"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.19"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="rabbit"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.18"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.20"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.14"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.20"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="elephant"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.19"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.15"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.21"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="elephant"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.22"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.16"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.22"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="koala"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.21"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.23"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.17"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.23"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="fish"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.22"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.24"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.18"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.24"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="monkey"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.23"
+        app:layout_constraintRight_toLeftOf="@id/imageButton3.25"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.19"
+        app:srcCompat="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton3.25"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:onClick="gameLogic"
+        android:scaleType="centerInside"
+        android:tag="rabbit"
+        app:layout_constraintLeft_toRightOf="@id/imageButton3.24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton3.20"
+        app:srcCompat="@drawable/star" />
+
+
+
+</android.support.constraint.ConstraintLayout>
